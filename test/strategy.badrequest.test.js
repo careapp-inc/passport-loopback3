@@ -11,26 +11,6 @@ describe('Strategy', function() {
     return done(null, false);
   });
   
-  describe('handling a request with malformed authorization header', function() {
-    var status;
-    
-    before(function(done) {
-      chai.passport(strategy)
-        .fail(function(s) {
-          status = s;
-          done();
-        })
-        .req(function(req) {
-          req.headers.authorization = 'Bearer';
-        })
-        .authenticate();
-    });
-    
-    it('should fail with status', function() {
-      expect(status).to.be.a.number;
-      expect(status).to.equal(400);
-    });
-  });
   
   describe('handling a request with token included in more than one way', function() {
     var status;

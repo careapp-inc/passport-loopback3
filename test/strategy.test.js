@@ -6,7 +6,7 @@ describe('Strategy', function() {
   var strategy = new Strategy(function(){});
     
   it('should be named bearer', function() {
-    expect(strategy.name).to.equal('bearer');
+    expect(strategy.name).to.equal('loopback');
   });
   
   it('should throw if constructed without a verify callback', function() {
