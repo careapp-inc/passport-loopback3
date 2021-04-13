@@ -1,7 +1,7 @@
 {
-  "name": "passport-http-bearer",
+  "name": "passport-loopback3",
   "version": "1.0.1",
-  "description": "HTTP Bearer authentication strategy for Passport.",
+  "description": "Loopback3 authentication strategy for Passport based on HTTP Bearer.",
   "keywords": [
     "passport",
     "auth",
@@ -12,19 +12,20 @@
     "http",
     "bearer",
     "token",
-    "oauth"
+    "oauth",
+    "loopback"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-http-bearer.git"
+    "url": "git+https://github.com/visionmedia/express.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-http-bearer/issues"
+    "url": "https://github.com/careapp-inc/passport-loopback3/issues"
   },
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "CareApp",
+    "email": "michael@careapp.com.au",
+    "url": "https://engineering.careapp.com.au/"
   },
   "license": "MIT",
   "licenses": [
@@ -53,7 +54,7 @@
     "browsers": [
       "chrome/latest"
     ],
-    "harness" : "mocha",
+    "harness": "mocha",
     "files": [
       "test/bootstrap/testling.js",
       "test/*.test.js"
